@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded"), () => {
     document.getElementById("continue-btn").addEventListener("click", startQuiz);
 });
 
