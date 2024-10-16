@@ -2,8 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("continue-btn").addEventListener("click", startQuiz);
 });
 
-let boyfriendName = ""; // To store the boyfriend's name
-
+let boyfriendName = ""; // To store the boyfriend's nam
 
 function startQuiz() {
     const content = document.getElementById("content");
