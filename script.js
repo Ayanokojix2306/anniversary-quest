@@ -56,7 +56,10 @@ function submitLove() {
 
     if (answer.includes("smile") || answer.includes("weird") || answer.includes("cute") || answer.includes("funny") || answer.includes("happy") || answer.includes("vibe")) {
         response = "Aww baby🥺🥺 ill try to use that to make you happy every day❤️.";
-    } else {
+    } 
+    if (answer.includes("everything")) {
+        response = " everything about me?😭😭 me that im not perfect but it doesn't matter to you anyways♥️";
+    else {
         response = "aww baby 🥺🥺 that's sweet🥺😍❤️";
     }
 
@@ -90,11 +93,11 @@ function submitHate() {
     const answer = document.getElementById("hate-answer").value.toLowerCase();
     let response = '';
 
-    if (answer === "nothing") {
+    if (answer.includes ("nothing")) {
         response = "Oh, thank God I'm trying my best sha.";
     } 
     if (answer.includes ("equality")) {
-        response = "ahn ahn im reducing it naa 🥲🥲" 
+        response = "ahn ahn im reducing it naa 🥲🥲";
     }
     else {
         response = "Oya no wahala ill try my best to change 🥲";
