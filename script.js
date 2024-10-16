@@ -341,9 +341,9 @@ function showSurprise() {
     content.innerHTML = `
         <div class="pop-up">
             <p>Thank you for filling this quiz! I really appreciate it, my love 🥺❤️.</p>
-            <p>Tap on the link dear 🤭 I have a surprise for you!</p>
-            <a href="https://your-surprise-link.com" target="_blank">
-                <button class="btn">Tap here for your surprise</button>
+            <p>Now for the Grand finale tap on the button </p>
+            <a href="https://writeup-9h97.onrender.com" target="_blank">
+                <button class="btn">Tap here</button>
             </a>
         </div>
     `;
