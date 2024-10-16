@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-    animation: moveTitle 4s infinite alternate; /* Title moving effect */
+    animation: moveTitle 1s infinite alternate; /* Title moving effect */
 }
 
 @keyframes moveTitle {
@@ -33,7 +33,7 @@ h1 {
 }
 
 .pop-up {
-    animation: fadeIn 5s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
     margin-top: 20px;
     font-size: 20px;
 }
