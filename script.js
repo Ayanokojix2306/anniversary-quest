@@ -8,7 +8,7 @@ function startQuiz() {
     const content = document.getElementById("content");
     content.innerHTML = `
         <div class="pop-up">
-            <p>Who is your boyfriend?</p>
+            <p>what's the name of your bebe? bebe</p>
             <input type="text" id="boyfriend" placeholder="Type his name">
             <button class="btn" id="submit-boyfriend-btn">Submit</button>
         </div>
@@ -25,7 +25,7 @@ function submitBoyfriend() {
         const content = document.getElementById("content");
         content.innerHTML = `
             <div class="pop-up">
-                <p> ehen🌚🌝 so it's  ${boyfriendName}</p>
+                <p> ehen🌚🌝 so it's  ${boyfriendName} Abi?🌚 that's nice</p>
                 <p>Would you like to move on to the next question?</p>
                 <button class="btn" id="next-question-btn">Ok</button>
             </div>
@@ -41,7 +41,7 @@ function nextQuestion() {
     content.innerHTML = `
         <div class="pop-up">
             <p>What do you love about ${boyfriendName}?</p>
-            <input type="text" id="love-answer" placeholder="Type what you love">
+            <input type="text" id="love-answer" placeholder="Type it sweetie">
             <button class="btn" id="submit-love-btn">Submit</button>
         </div>
     `;
@@ -55,9 +55,9 @@ function submitLove() {
     let response = '';
 
     if (answer.includes("smile") || answer.includes("weird") || answer.includes("cute") || answer.includes("funny") || answer.includes("happy") || answer.includes("vibe")) {
-        response = "Aww, you are making me blush, stop it.";
+        response = "Aww baby🥺🥺 i didn't know o ill try to use that to make you happy every day❤️.";
     } else {
-        response = "That's so sweet!";
+        response = "aww baby 🥺🥺 that's sweet🥺😍❤️";
     }
 
     const content = document.getElementById("content");
@@ -76,7 +76,7 @@ function nextHateQuestion() {
     const content = document.getElementById("content");
     content.innerHTML = `
         <div class="pop-up">
-            <p>What are the things your boyfriend does that you hate the most? (If nothing, type 'nothing')</p>
+            <p>What are the things ${boyfriendName} does that you hate the most? (If nothing, type 'nothing' but we both know its nothing sha😂)</p>
             <input type="text" id="hate-answer" placeholder="Type your answer">
             <button class="btn" id="submit-hate-btn">Submit</button>
         </div>
@@ -93,7 +93,7 @@ function submitHate() {
     if (answer === "nothing") {
         response = "Oh, thank God I'm trying my best sha.";
     } else {
-        response = "Oh, I didn't know that it was like that. I will try my best to change.";
+        response = "Oya no wahala ill try my breast to change 🥲";
     }
 
     const content = document.getElementById("content");
@@ -112,7 +112,7 @@ function nextHappyQuestion() {
     const content = document.getElementById("content");
     content.innerHTML = `
         <div class="pop-up">
-            <p>Do you know that you make your boyfriend happy a lot?</p>
+            <p>Do you know that you make ${boyfriendName} happy a lot? even your "heyyyy" is enough to turn his frown upside down</p>
             <label><input type="radio" name="happy" value="Yes"> Yes</label>
             <label><input type="radio" name="happy" value="No"> No</label>
             <button class="btn" id="submit-happy-btn">Submit</button>
