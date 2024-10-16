@@ -1,5 +1,5 @@
 body {
-    background-color: #a020f0; /* Red background */
+    background-color: #008000; /* Red background */
     color: blue;
     font-family: 'times new roman', sans-serif;
     text-align: center;
@@ -22,8 +22,8 @@ h1 {
     background-color: #ffffff;
     color: #ff4d4d;
     border: none;
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: 20px 40px;
+    font-size: 20px;
     cursor: pointer;
     margin-top: 20px;
 }
@@ -33,7 +33,7 @@ h1 {
 }
 
 .pop-up {
-    animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 5s ease-in-out;
     margin-top: 20px;
     font-size: 20px;
 }
