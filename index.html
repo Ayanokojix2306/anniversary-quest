@@ -1,81 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anniversary Quest</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anniversary Quest</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="welcome" class="stage active">
-        <h1>Welcome to Ayano Koji's Anniversary Quest especially made for my lovely Sophia</h1>
-        <button onclick="nextStage(1)">Continue</button>
-    </div>
+  <!-- Welcome screen -->
+  <div id="welcome-screen">
+    <h1>Welcome to Ayano Koji's anniversary quest especially made for my lovely Sophia</h1>
+    <button id="continue-btn">Continue</button>
+  </div>
 
-    <div id="stage1" class="stage hidden">
-        <h2>Question 1: Who is your boyfriend?</h2>
-        <input type="text" id="boyfriendName" placeholder="Type your answer here">
-        <button onclick="submitStage(1)">Submit</button>
-    </div>
+  <!-- Question 1 -->
+  <div id="question-1" style="display: none;">
+    <p>Who is your boyfriend?</p>
+    <input type="text" id="boyfriend-name" placeholder="Type his name">
+    <button id="submit-boyfriend-btn">Submit</button>
+  </div>
 
-    <div id="stage2" class="stage hidden">
-        <h2>Question 2: What do you love about <span id="displayBoyfriend"></span>?</h2>
-        <input type="text" id="loveAnswer" placeholder="Type your answer here">
-        <button onclick="submitStage(2)">Submit</button>
-    </div>
+  <!-- Question 2 (will display dynamically) -->
+  <div id="question-2" style="display: none;">
+    <p id="question-2-text">What do you love about your boyfriend?</p>
+    <input type="text" id="love-reason" placeholder="What do you love about him?">
+    <button id="submit-love-reason-btn">Submit</button>
+  </div>
 
-    <div id="stage3" class="stage hidden">
-        <h2>Question 3: What are the things your boyfriend does that you hate the most?</h2>
-        <input type="text" id="hateAnswer" placeholder="Type your answer here">
-        <button onclick="submitStage(3)">Submit</button>
-    </div>
+  <!-- Confetti container -->
+  <div id="confetti" style="display: none;">🎉</div>
 
-    <div id="stage4" class="stage hidden">
-        <h2>Question 4: Do you know that you make <span id="displayBoyfriend2"></span> happy a lot?</h2>
-        <button onclick="submitStage(4, true)">Yes</button>
-        <button onclick="submitStage(4, false)">No</button>
-    </div>
-
-    <div id="stage5" class="stage hidden">
-        <h2>Question 5: Would you marry me? 🥺</h2>
-        <button onclick="submitStage(5, true)">Yes</button>
-        <button onclick="submitStage(5, false)">No</button>
-    </div>
-
-    <div id="stage6" class="stage hidden">
-        <h2>Question 6: "I hate you," in <span id="displayBoyfriend3"></span>'s language, what does that mean?</h2>
-        <input type="text" id="hateLanguageAnswer" placeholder="Type your answer here">
-        <button onclick="submitStage(6)">Submit</button>
-    </div>
-
-    <div id="stage7" class="stage hidden">
-        <h2>Question 7: Can you see a future where both of you are married?</h2>
-        <button onclick="submitStage(7, true)">Yes</button>
-        <button onclick="submitStage(7, false)">No</button>
-    </div>
-
-    <div id="stage8" class="stage hidden">
-        <h2>Question 8: Do you like me?</h2>
-        <label>
-            <input type="radio" name="likeMe" value="like" onclick="submitStage(8, 'like')"> Yes, I like you
-        </label>
-        <br>
-        <label>
-            <input type="radio" name="likeMe" value="dislike" onclick="submitStage(8, 'dislike')"> No, I don't like you
-        </label>
-    </div>
-
-    <div id="final" class="stage hidden">
-        <h2>Thank you for filling this quiz! I really appreciate it, my love!</h2>
-        <button onclick="revealSurprise()">Tap on the link dear 🤭 I have a surprise for you!</button>
-    </div>
-
-    <div id="surprise" class="hidden">
-        <p id="finalMessage"></p>
-        <button onclick="closeSurprise()">Close</button>
-    </div>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
-                              </html>
-                              
+</html>
