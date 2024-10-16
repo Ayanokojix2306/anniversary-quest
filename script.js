@@ -93,7 +93,7 @@ function submitHate() {
     if (answer === "nothing") {
         response = "Oh, thank God I'm trying my best sha.";
     } 
-    if (answer === "equality") {
+    if (answer.includes ("equality")) {
         response = "ahn ahn im reducing it naa 🥲🥲" 
     }
     else {
