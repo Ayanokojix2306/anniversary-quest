@@ -8,7 +8,7 @@ function startQuiz() {
     const content = document.getElementById("content");
     content.innerHTML = `
         <div class="pop-up">
-            <p>What's the name of your bebe? bebe</p>
+            <p>What's the name of your love?ehh sweetheart not full name o😂 normal name</p>
             <input type="text" id="boyfriend" placeholder="Type his name">
             <button class="btn" id="submit-boyfriend-btn">Submit</button>
         </div>
