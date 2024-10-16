@@ -25,7 +25,7 @@ function submitBoyfriend() {
         const content = document.getElementById("content");
         content.innerHTML = `
             <div class="pop-up">
-                <p>Aww, me that, I didn't even know that it was ${boyfriendName}!</p>
+                <p> ehen🌚🌚 so it's  ${boyfriendName}</p>
                 <p>Would you like to move on to the next question?</p>
                 <button class="btn" id="next-question-btn">Ok</button>
             </div>
