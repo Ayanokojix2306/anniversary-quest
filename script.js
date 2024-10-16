@@ -92,7 +92,11 @@ function submitHate() {
 
     if (answer === "nothing") {
         response = "Oh, thank God I'm trying my best sha.";
-    } else {
+    } 
+    if (answer === "equality") {
+        response = "ahn ahn im reducing it naa 🥲🥲" 
+    }
+    else {
         response = "Oya no wahala ill try my best to change 🥲";
     }
 
