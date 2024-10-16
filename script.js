@@ -59,6 +59,7 @@ function submitLove() {
     } 
     if (answer.includes("everything")) {
         response = " everything about me?😭😭 me that im not perfect but it doesn't matter to you anyways♥️";
+    }
     else {
         response = "aww baby 🥺🥺 that's sweet🥺😍❤️";
     }
