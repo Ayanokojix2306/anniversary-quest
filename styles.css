@@ -1,28 +1,44 @@
 body {
-  background-color: red;
-  color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
+    background-color: #ff4d4d; /* Red background */
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
 }
 
-button {
-  background-color: white;
-  color: red;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
+h1 {
+    animation: moveTitle 4s infinite alternate; /* Title moving effect */
 }
 
-button:hover {
-  background-color: #f1f1f1;
+@keyframes moveTitle {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(20px); }
 }
 
-input {
-  padding: 10px;
-  font-size: 16px;
+.container {
+    padding: 50px;
 }
 
-#confetti {
-  font-size: 30px;
+.btn {
+    background-color: #ffffff;
+    color: #ff4d4d;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #ffcccc;
+}
+
+.pop-up {
+    animation: fadeIn 1s ease-in-out;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
