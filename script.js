@@ -8,7 +8,7 @@ function startQuiz() {
     const content = document.getElementById("content");
     content.innerHTML = `
         <div class="pop-up">
-            <p>what's the name of your bebe? bebe</p>
+            <p>What's the name of your bebe? bebe</p>
             <input type="text" id="boyfriend" placeholder="Type his name">
             <button class="btn" id="submit-boyfriend-btn">Submit</button>
         </div>
@@ -25,7 +25,7 @@ function submitBoyfriend() {
         const content = document.getElementById("content");
         content.innerHTML = `
             <div class="pop-up">
-                <p> ehen🌚🌝 so it's  ${boyfriendName} Abi?🌚 that's nice</p>
+                <p> Ehen🌚🌝 so it's ${boyfriendName} Abi?🌚 that's nice</p>
                 <p>Would you like to move on to the next question?</p>
                 <button class="btn" id="next-question-btn">Ok</button>
             </div>
@@ -93,7 +93,7 @@ function submitHate() {
     if (answer === "nothing") {
         response = "Oh, thank God I'm trying my best sha.";
     } else {
-        response = "Oya no wahala ill try my breast to change 🥲";
+        response = "Oya no wahala ill try my best to change 🥲";
     }
 
     const content = document.getElementById("content");
@@ -137,27 +137,223 @@ function submitHappy() {
     content.innerHTML = `
         <div class="pop-up">
             <p>${response}</p>
-            <button class="btn" id="final-btn">Next</button>
+            <button class="btn" id="question-6-btn">Next</button>
         </div>
     `;
 
-    // Attach event listener to dynamically added 'Final' button
-    document.getElementById("final-btn").addEventListener("click", showFinalMessage);
+    // Attach event listener to dynamically added 'Next' button
+    document.getElementById("question-6-btn").addEventListener("click", questionSix);
 }
 
-function showFinalMessage() {
+function questionSix() {
     const content = document.getElementById("content");
     content.innerHTML = `
         <div class="pop-up">
-            <h3>Thank you for filling this quiz I really appreciate it ml</h3>
-            <button class="btn" id="confetti-btn">You're Welcome</button>
-            <p>Tap on the link dear 🤭 I have a surprise for you</p>
+            <p>Would you marry me? 🥺</p>
+            <label><input type="radio" name="marry" value="Yes"> Yes</label>
+            <label><input type="radio" name="marry" value="No"> No</label>
+            <button class="btn" id="submit-marry-btn">Submit</button>
         </div>
     `;
 
-    // Add confetti effect logic here
-    document.getElementById("confetti-btn").addEventListener("click", () => {
-        console.log("Confetti! 🎉");  // Replace this with actual confetti effect
-    });
+    // Attach event listener to dynamically added 'Submit' button
+    document.getElementById("submit-marry-btn").addEventListener("click", submitMarry);
 }
-                    
+
+function submitMarry() {
+    const selectedAnswer = document.querySelector('input[name="marry"]:checked').value;
+    let response = '';
+
+    if (selectedAnswer === "Yes") {
+        response = "Yayyy, I'm so happy! ❤️";
+    } else {
+        response = "Awww 🤕. That's okay, we can still be happy together.";
+    }
+
+    const content = document.getElementById("content");
+    content.innerHTML = `
+        <div class="pop-up">
+            <p>${response}</p>
+            <button class="btn" id="question-7-btn">Next</button>
+        </div>
+    `;
+
+    // Attach event listener to dynamically added 'Next' button
+    document.getElementById("question-7-btn").addEventListener("click", questionSeven);
+}
+
+function questionSeven() {
+    const content = document.getElementById("content");
+    content.innerHTML = `
+        <div class="pop-up">
+            <p>If I said I hate you, what would you think I mean?</p>
+            <input type="text" id="hate-meaning" placeholder="Type your answer">
+            <button class="btn" id="submit-hate-meaning-btn">Submit</button>
+        </div>
+    `;
+
+    // Attach event listener to dynamically added 'Submit' button
+    document.getElementById("submit-hate-meaning-btn").addEventListener("click", submitHateMeaning);
+}
+
+function submitHateMeaning() {
+    const answer = document.getElementById("hate-meaning").value.toLowerCase();
+    let response = '';
+
+    if (answer === "i love you" || answer === "love") {
+        response = "My baby knows me so well 🥺.";
+    } else {
+        response = "Omo u no get brain o 😂. How ago hate you?";
+    }
+
+    const content = document.getElementById("content");
+    content.innerHTML = `
+        <div class="pop-up">
+            <p>${response}</p>
+            <button class="btn" id="question-8-btn">Next</button>
+        </div>
+    `;
+
+    // Attach event listener to dynamically added 'Next' button
+    document.getElementById("question-8-btn").addEventListener("click", questionEight);
+}
+
+// Question 8: "Do you like me?"
+function questionEight() {
+    const content = document.getElementById("content");
+    content.innerHTML = `
+        <div class="pop-up">
+            <p>Do you like me?</p>
+            <label><input type="radio" name="like" value="Yes"> Yes, I like you</label>
+            <label><input type="radio" name="like" value="No"> No, I don't like you</label>
+            <label><input type="radio" name="like" value="Love"> No, I don't like you, I love you</label>
+            <button class="btn" id="submit-like-btn">Submit</button>
+        </div>
+    `;
+
+    // Attach event listener to dynamically added 'Submit' button
+    document.getElementById("submit-like-btn").addEventListener("click", submitLike);
+}
+
+function submitLike() {
+    const selectedAnswer = document.querySelector('input[name="like"]:checked').value;
+    let response = '';
+
+    if (selectedAnswer === "Yes") {
+        response = "Okay, cool 😎.";
+    } else if (selectedAnswer === "Love") {
+        response = "Awwwww, I love you too ❤️🥺.";
+    } else {
+        response = "😢 Aww, that's okay.";
+    }
+
+    const content = document.getElementById("content");
+    content.innerHTML = `
+        <div class="pop-up">
+            <p>${response}</p>
+            <button class="btn" id="question-9-btn">Next</button>
+        </div>
+    `;
+
+    // Attach event listener to dynamically added 'Next' button
+    document.getElementById("question-9-btn").addEventListener("click", questionNine);
+}
+
+// Question 9: "Can you see a future where both of us are married?"
+function questionNine() {
+    const content = document.getElementById("content");
+    content.innerHTML = `
+        <div class="pop-up">
+            <p>Can you see a future where both of us are married? 🤵👰</p>
+            <label><input type="radio" name="married-future" value="Yes"> Yes</label>
+            <label><input type="radio" name="married-future" value="No"> No</label>
+            <button class="btn" id="submit-married-future-btn">Submit</button>
+        </div>
+    `;
+
+    // Attach event listener to dynamically added 'Submit' button
+    document.getElementById("submit-married-future-btn").addEventListener("click", submitMarriedFuture);
+}
+
+function submitMarriedFuture() {
+    const selectedAnswer = document.querySelector('input[name="married-future"]:checked').value;
+    let response = '';
+
+    if (selectedAnswer === "Yes") {
+        response = "Me too! 🥰.";
+    } else {
+        response = "Well, I do 😊.";
+    }
+
+    const content = document.getElementById("content");
+    content.innerHTML = `
+        <div class="pop-up">
+            <p>${response}</p>
+            <button class="btn" id="question-10-btn">Next</button>
+        </div>
+    `;
+
+    // Attach event listener to dynamically added 'Next' button
+    document.getElementById("question-10-btn").addEventListener("click", questionTen);
+}
+
+// Question 10: "Do you love me more than anything?"
+function questionTen() {
+    const content = document.getElementById("content");
+    content.innerHTML = `
+        <div class="pop-up">
+            <p>Do you love me more than anything? 💖</p>
+            <label><input type="radio" name="love-more" value="Yes"> Yes</label>
+            <label><input type="radio" name="love-more" value="No"> No</label>
+            <button class="btn" id="submit-love-more-btn">Submit</button>
+        </div>
+    `;
+
+    // Attach event listener to dynamically added 'Submit' button
+    document.getElementById("submit-love-more-btn").addEventListener("click", submitLoveMore);
+}
+
+function submitLoveMore() {
+    const selectedAnswer = document.querySelector('input[name="love-more"]:checked').value;
+    let response = '';
+
+    if (selectedAnswer === "Yes") {
+        response = "Awww, I love you too! 🥰❤️";
+    } else {
+        response = "Awww, I still love you 💖.";
+    }
+
+    const content = document.getElementById("content");
+    content.innerHTML = `
+        <div class="pop-up">
+            <p>${response}</p>
+            <button class="btn" id="show-surprise-btn">You're welcome</button>
+        </div>
+    `;
+
+    // Attach event listener to dynamically added 'You're welcome' button
+    document.getElementById("show-surprise-btn").addEventListener("click", showSurprise);
+}
+
+// Final Surprise (Link and Confetti)
+function showSurprise() {
+    const content = document.getElementById("content");
+    content.innerHTML = `
+        <div class="pop-up">
+            <p>Thank you for filling this quiz! I really appreciate it, my love 🥺❤️.</p>
+            <p>Tap on the link dear 🤭 I have a surprise for you!</p>
+            <a href="https://your-surprise-link.com" target="_blank">
+                <button class="btn">Tap here for your surprise</button>
+            </a>
+        </div>
+    `;
+
+    // Optional: Confetti effect or some fun animation here!
+    confettiEffect();  // Call confetti function if you have one!
+}
+
+// Optional Confetti Effect Function
+function confettiEffect() {
+    // You can use a confetti library or implement your own animation here
+    console.log("Confetti starts! 🎉");
+}
