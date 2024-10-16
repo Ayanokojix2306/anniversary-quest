@@ -55,7 +55,7 @@ function submitLove() {
     let response = '';
 
     if (answer.includes("smile") || answer.includes("weird") || answer.includes("cute") || answer.includes("funny") || answer.includes("happy") || answer.includes("vibe")) {
-        response = "Aww baby🥺🥺 i didn't know o ill try to use that to make you happy every day❤️.";
+        response = "Aww baby🥺🥺 ill try to use that to make you happy every day❤️.";
     } else {
         response = "aww baby 🥺🥺 that's sweet🥺😍❤️";
     }
@@ -76,7 +76,7 @@ function nextHateQuestion() {
     const content = document.getElementById("content");
     content.innerHTML = `
         <div class="pop-up">
-            <p>What are the things ${boyfriendName} does that you hate the most? (If nothing, type 'nothing' but we both know its nothing sha😂)</p>
+            <p>What is the thing ${boyfriendName} does that you hate when he does it? (If nothing, type 'nothing' but we both know its nothing sha😂)</p>
             <input type="text" id="hate-answer" placeholder="Type your answer">
             <button class="btn" id="submit-hate-btn">Submit</button>
         </div>
@@ -186,7 +186,7 @@ function questionSeven() {
     const content = document.getElementById("content");
     content.innerHTML = `
         <div class="pop-up">
-            <p>If I said I hate you, what would you think I mean?</p>
+            <p>If I said I hate you, like suddenly what would you think I mean?</p>
             <input type="text" id="hate-meaning" placeholder="Type your answer">
             <button class="btn" id="submit-hate-meaning-btn">Submit</button>
         </div>
@@ -242,7 +242,7 @@ function submitLike() {
     if (selectedAnswer === "Yes") {
         response = "Okay, cool 😎.";
     } else if (selectedAnswer === "Love") {
-        response = "Awwwww, I love you too ❤️🥺.";
+        response = "Awwwww, haaa baby e too much joor😪❤️🥺.";
     } else {
         response = "😢 Aww, that's okay.";
     }
@@ -302,7 +302,7 @@ function questionTen() {
     const content = document.getElementById("content");
     content.innerHTML = `
         <div class="pop-up">
-            <p>Do you love me more than anything? 💖</p>
+            <p>Would you lik to spend the rest of your life with me? 💖</p>
             <label><input type="radio" name="love-more" value="Yes"> Yes</label>
             <label><input type="radio" name="love-more" value="No"> No</label>
             <button class="btn" id="submit-love-more-btn">Submit</button>
@@ -318,9 +318,9 @@ function submitLoveMore() {
     let response = '';
 
     if (selectedAnswer === "Yes") {
-        response = "Awww, I love you too! 🥰❤️";
+        response = "Im as weird as fuck o but either way id be happy to have u in my life too 😂❤️";
     } else {
-        response = "Awww, I still love you 💖.";
+        response = "ehen okay oo😖🥲.";
     }
 
     const content = document.getElementById("content");
